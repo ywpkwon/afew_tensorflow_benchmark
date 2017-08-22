@@ -1,6 +1,6 @@
 # Experiment
 
-I measured computation time for **one** image inference (`batch size = 1`). Larger batch sizes are less out of concern since I am targeting real-time applications (inference on-the-fly).
+I measured computation time for **one** image inference (`batch size = 1`). Larger batch sizes are somewhat out of concern since I am targeting real-time applications (inference on-the-fly).
 
 I reported `flops` and `parameter sizes` as well as `timing`. Still, I am not sure why some networks run faster even when they have larger FLOPS and PARAMS. (E.g, see `VGG16` and `INCEPTION-V3` for classification.) **Please let me know if you know the answer**.
 
