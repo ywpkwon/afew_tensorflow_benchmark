@@ -1,6 +1,11 @@
 # Experiment
 
-We target computation time for 1 image inference (`batch size` = 1).
+I measured computation time for **one** image inference (`batch size` = 1). Larger batch sizes are less out of concern since I am targeting real-time applications (inference on-the-fly).
+
+I tried to also report `flops` and `parameter sizes`. Still, I am not sure why some networks run faster even when they have larger FLOPS and PARAMS. See `VGG16` and `INCEPTION-V3` for classification below. **Please let me know if you know the answer**.
+
+The computation durations below are measured by averaging 1000 trials, with excluding two extremes (min and max). You can see also timeline profiling which shows each operational duration. The are `.json` files, and you can check them using `Chrome`. Type `chrome:\\tracing` and load each json file.
+
 
 # System
 
@@ -8,12 +13,13 @@ Ubuntu 16.04 with Titan X. Tensorflow 1.2
 
 # Classification networks 
 
-## VGG16. PASCAL VOC classification (input 224x224x3. output 21)
+PASCAL VOC classification (input 1x224x224x3. output 21 classes.)
 
-### timing
-8 ms
+### VGG16. 
 
-### flops
+#### timing: 8 ms
+
+#### flops
     _TFProfRoot (0/36.01b flops)
       vgg_16/conv1/conv1_2/convolution (4.39b/4.39b flops)
       vgg_16/conv2/conv2_2/convolution (4.39b/4.39b flops)
@@ -47,7 +53,7 @@ Ubuntu 16.04 with Titan X. Tensorflow 1.2
       vgg_16/fc7/BiasAdd (4.10k/4.10k flops)
       vgg_16/fc8/BiasAdd (1.00k/1.00k flops)
 
-### parameters
+#### parameters
     _TFProfRoot (--/138.36m params)
       vgg_16/conv1/conv1_1/biases (64, 64/64 params)
       vgg_16/conv1/conv1_1/weights (3x3x3x64, 1.73k/1.73k params)
@@ -83,12 +89,12 @@ Ubuntu 16.04 with Titan X. Tensorflow 1.2
       vgg_16/fc8/weights (1x1x4096x1000, 4.10m/4.10m params)
 
 
-## INCEPTION-V3. PASCAL VOC classification (input 224x224x3. output 21)
+### INCEPTION-V3. PASCAL VOC classification (input 224x224x3. output 21)
 
-### timing
+#### timing
 10 ms
 
-### flops
+#### flops
     _TFProfRoot (0/6.92b flops)
       InceptionV3/InceptionV3/Conv2d_4a_3x3/convolution (898.28m/898.28m flops)
       InceptionV3/InceptionV3/Conv2d_2b_3x3/convolution (522.03m/522.03m flops)
@@ -281,7 +287,7 @@ Ubuntu 16.04 with Titan X. Tensorflow 1.2
       InceptionV3/Logits/Conv2d_1c_1x1/BiasAdd (1.00k/1.00k flops)
 
 
-### parameters
+#### parameters
     _TFProfRoot (--/25.57m params)
       InceptionV3/AuxLogits/Conv2d_1b_1x1/biases (128, 128/128 params)
       InceptionV3/AuxLogits/Conv2d_1b_1x1/weights (1x1x768x128, 98.30k/98.30k params)
