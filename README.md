@@ -52,6 +52,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
       vgg_16/fc6/BiasAdd (4.10k/4.10k flops)
       vgg_16/fc7/BiasAdd (4.10k/4.10k flops)
       vgg_16/fc8/BiasAdd (1.00k/1.00k flops)
+[flops detail](vgg16_flops_detail.md)
 
 #### parameters
     _TFProfRoot (--/138.36m params)
