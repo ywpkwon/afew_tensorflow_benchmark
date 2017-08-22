@@ -1,0 +1,5762 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "args": {
+                "name": "Allocators"
+            },
+            "pid": 0,
+            "ph": "M"
+        },
+        {
+            "name": "process_name",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/cpu:0 Compute"
+            },
+            "pid": 1,
+            "ph": "M"
+        },
+        {
+            "name": "process_name",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/cpu:0 Tensors"
+            },
+            "pid": 2,
+            "ph": "M"
+        },
+        {
+            "name": "process_name",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/gpu:0 Compute"
+            },
+            "pid": 3,
+            "ph": "M"
+        },
+        {
+            "name": "process_name",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/gpu:0 Tensors"
+            },
+            "pid": 4,
+            "ph": "M"
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "NoOp",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267758643,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Arg",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15,
+            "ts": 1503392267758687,
+            "args": {
+                "name": "_arg_Placeholder_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267774743,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block4_box/Reshape_0_2",
+                "input0": "ssd_300_vgg/block4_box/Reshape/_7",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block4_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267761018,
+            "id": 0
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block4_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267774743,
+            "id": 0
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267774885,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax/Reshape_1_0_6",
+                "input0": "ssd_300_vgg/softmax/Reshape_1/_15",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267761181,
+            "id": 1
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267774885,
+            "id": 1
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267777261,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block7_box/Reshape_0_3",
+                "input0": "ssd_300_vgg/block7_box/Reshape/_9",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block7_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267761973,
+            "id": 2
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block7_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267777261,
+            "id": 2
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267777654,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax_1/Reshape_1_0_7",
+                "input0": "ssd_300_vgg/softmax_1/Reshape_1/_17",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_1/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267762278,
+            "id": 3
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_1/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267777654,
+            "id": 3
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267777790,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block8_box/Reshape_0_4",
+                "input0": "ssd_300_vgg/block8_box/Reshape/_11",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block8_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267762503,
+            "id": 4
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block8_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267777790,
+            "id": 4
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267778046,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax_2/Reshape_1_0_8",
+                "input0": "ssd_300_vgg/softmax_2/Reshape_1/_19",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_2/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267762768,
+            "id": 5
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_2/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778046,
+            "id": 5
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267778177,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block9_box/Reshape_0_5",
+                "input0": "ssd_300_vgg/block9_box/Reshape/_13",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block9_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267762975,
+            "id": 6
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block9_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778177,
+            "id": 6
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267778372,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax_3/Reshape_1_0_9",
+                "input0": "ssd_300_vgg/softmax_3/Reshape_1/_21",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_3/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267763262,
+            "id": 7
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_3/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778372,
+            "id": 7
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267778500,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block10_box/Reshape_0_0",
+                "input0": "ssd_300_vgg/block10_box/Reshape/_3",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block10_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267763440,
+            "id": 8
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block10_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778500,
+            "id": 8
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267778636,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax_4/Reshape_1_0_10",
+                "input0": "ssd_300_vgg/softmax_4/Reshape_1/_23",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_4/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267763705,
+            "id": 9
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_4/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778636,
+            "id": 9
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267778644,
+            "args": {
+                "name": "_retval_ssd_300_vgg/block11_box/Reshape_0_1",
+                "input0": "ssd_300_vgg/block11_box/Reshape/_5",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/Reshape",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267763770,
+            "id": 10
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/Reshape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778644,
+            "id": 10
+        },
+        {
+            "pid": 1,
+            "cat": "Op",
+            "name": "_Retval",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267778691,
+            "args": {
+                "name": "_retval_ssd_300_vgg/softmax_5/Reshape_1_0_11",
+                "input0": "ssd_300_vgg/softmax_5/Reshape_1/_25",
+                "op": "_Retval"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_5/Reshape_1",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267763869,
+            "id": 11
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_5/Reshape_1",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267778691,
+            "id": 11
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "NoOp",
+            "tid": 0,
+            "ph": "X",
+            "dur": 31,
+            "ts": 1503392267758654,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267758697,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758715,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267758721,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758735,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758740,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758744,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758748,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758752,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758756,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758761,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758766,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758771,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758776,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758781,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758786,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758792,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758798,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267758803,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267758807,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758818,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758823,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758828,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758832,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758838,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758842,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758847,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758853,
+            "args": {
+                "name": "ssd_300_vgg/conv6/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758857,
+            "args": {
+                "name": "ssd_300_vgg/conv6/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758862,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice/stack",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758868,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice/stack_1",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758873,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3/stack",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267758876,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0/0",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758880,
+            "args": {
+                "name": "ssd_300_vgg/conv7/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758884,
+            "args": {
+                "name": "ssd_300_vgg/conv7/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758890,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758896,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758901,
+            "args": {
+                "name": "ssd_300_vgg/block8/pad2d/Pad/paddings",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267758907,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758921,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758926,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758934,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758940,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758945,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267758951,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267758956,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267758963,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758969,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758973,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758977,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758981,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267758985,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758988,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Maximum/y",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267758992,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/gamma",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267758997,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759010,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267759014,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759019,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759022,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759026,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759030,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759034,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759037,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759041,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759045,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759048,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759052,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759056,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759059,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759063,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267759066,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 1,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267759070,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267759075,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759081,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267759085,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/Reshape_1/shape/3",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759089,
+            "args": {
+                "name": "ssd_300_vgg/softmax_4/Reshape/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759092,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759096,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759109,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/weights",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "VariableV2",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759113,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/biases",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759116,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_1/_0__cf__35",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759119,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_2/_3__cf__38",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Const",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759122,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/range/_4__cf__39",
+                "op": "Const"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759125,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/weights/read",
+                "input0": "ssd_300_vgg/conv1/conv1_1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759129,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/biases/read",
+                "input0": "ssd_300_vgg/conv1/conv1_1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759132,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/weights/read",
+                "input0": "ssd_300_vgg/conv1/conv1_2/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759135,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/biases/read",
+                "input0": "ssd_300_vgg/conv1/conv1_2/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759138,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/weights/read",
+                "input0": "ssd_300_vgg/conv2/conv2_1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759141,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/biases/read",
+                "input0": "ssd_300_vgg/conv2/conv2_1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759144,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/weights/read",
+                "input0": "ssd_300_vgg/conv2/conv2_2/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759148,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/biases/read",
+                "input0": "ssd_300_vgg/conv2/conv2_2/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759151,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/weights/read",
+                "input0": "ssd_300_vgg/conv3/conv3_1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759154,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/biases/read",
+                "input0": "ssd_300_vgg/conv3/conv3_1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759157,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/weights/read",
+                "input0": "ssd_300_vgg/conv3/conv3_2/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759160,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/biases/read",
+                "input0": "ssd_300_vgg/conv3/conv3_2/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759163,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/weights/read",
+                "input0": "ssd_300_vgg/conv3/conv3_3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759166,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/biases/read",
+                "input0": "ssd_300_vgg/conv3/conv3_3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759170,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/weights/read",
+                "input0": "ssd_300_vgg/conv4/conv4_1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759173,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/biases/read",
+                "input0": "ssd_300_vgg/conv4/conv4_1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759176,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/weights/read",
+                "input0": "ssd_300_vgg/conv4/conv4_2/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759179,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/biases/read",
+                "input0": "ssd_300_vgg/conv4/conv4_2/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759182,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/weights/read",
+                "input0": "ssd_300_vgg/conv4/conv4_3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759185,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/biases/read",
+                "input0": "ssd_300_vgg/conv4/conv4_3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759188,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/weights/read",
+                "input0": "ssd_300_vgg/conv5/conv5_1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759191,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/biases/read",
+                "input0": "ssd_300_vgg/conv5/conv5_1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759194,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/weights/read",
+                "input0": "ssd_300_vgg/conv5/conv5_2/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759197,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/biases/read",
+                "input0": "ssd_300_vgg/conv5/conv5_2/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759200,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/weights/read",
+                "input0": "ssd_300_vgg/conv5/conv5_3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759204,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/biases/read",
+                "input0": "ssd_300_vgg/conv5/conv5_3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759206,
+            "args": {
+                "name": "ssd_300_vgg/conv6/weights/read",
+                "input0": "ssd_300_vgg/conv6/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759210,
+            "args": {
+                "name": "ssd_300_vgg/conv6/biases/read",
+                "input0": "ssd_300_vgg/conv6/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267759213,
+            "args": {
+                "name": "ssd_300_vgg/conv7/weights/read",
+                "input0": "ssd_300_vgg/conv7/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759220,
+            "args": {
+                "name": "ssd_300_vgg/conv7/biases/read",
+                "input0": "ssd_300_vgg/conv7/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759223,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/weights/read",
+                "input0": "ssd_300_vgg/block8/conv1x1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759226,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/biases/read",
+                "input0": "ssd_300_vgg/block8/conv1x1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759230,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/weights/read",
+                "input0": "ssd_300_vgg/block8/conv3x3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759233,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/biases/read",
+                "input0": "ssd_300_vgg/block8/conv3x3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759236,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/weights/read",
+                "input0": "ssd_300_vgg/block9/conv1x1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759239,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/biases/read",
+                "input0": "ssd_300_vgg/block9/conv1x1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759243,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/weights/read",
+                "input0": "ssd_300_vgg/block9/conv3x3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759246,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/biases/read",
+                "input0": "ssd_300_vgg/block9/conv3x3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759249,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/weights/read",
+                "input0": "ssd_300_vgg/block10/conv1x1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759251,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/biases/read",
+                "input0": "ssd_300_vgg/block10/conv1x1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759255,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/weights/read",
+                "input0": "ssd_300_vgg/block10/conv3x3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759258,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/biases/read",
+                "input0": "ssd_300_vgg/block10/conv3x3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759261,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/weights/read",
+                "input0": "ssd_300_vgg/block11/conv1x1/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759264,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/biases/read",
+                "input0": "ssd_300_vgg/block11/conv1x1/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759267,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/weights/read",
+                "input0": "ssd_300_vgg/block11/conv3x3/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759270,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/biases/read",
+                "input0": "ssd_300_vgg/block11/conv3x3/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759274,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/gamma/read",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/gamma",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759277,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block4_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759280,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block4_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759283,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block4_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759287,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block4_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759290,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block7_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759293,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block7_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759296,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block7_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759299,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block7_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759302,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block8_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759304,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block8_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759309,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block8_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759312,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block8_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759314,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block9_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267759317,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block9_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759321,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block9_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block9_box/conv_cls/weights",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267759062,
+            "id": 12
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block9_box/conv_cls/weights",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267759321,
+            "id": 12
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1,
+            "ts": 1503392267759324,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block9_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759326,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block10_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759330,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block10_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block10_box/conv_loc/biases",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267759074,
+            "id": 13
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block10_box/conv_loc/biases",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267759330,
+            "id": 13
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759333,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block10_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759336,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block10_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 1,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267759338,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/weights/read",
+                "input0": "ssd_300_vgg/block11_box/conv_loc/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_loc/weights",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267759095,
+            "id": 14
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_loc/weights",
+            "tid": 1,
+            "ph": "t",
+            "ts": 1503392267759338,
+            "id": 14
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759343,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/biases/read",
+                "input0": "ssd_300_vgg/block11_box/conv_loc/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759346,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/weights/read",
+                "input0": "ssd_300_vgg/block11_box/conv_cls/weights",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 1,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267759348,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/biases/read",
+                "input0": "ssd_300_vgg/block11_box/conv_cls/biases",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_cls/biases",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267759115,
+            "id": 15
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_cls/biases",
+            "tid": 1,
+            "ph": "t",
+            "ts": 1503392267759348,
+            "id": 15
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 119,
+            "ts": 1503392267759351,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/convolution",
+                "input0": "_arg_Placeholder_0_0/_1",
+                "input1": "ssd_300_vgg/conv1/conv1_1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 1,
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_0_0",
+            "tid": 0,
+            "ph": "s",
+            "ts": 1503392267758702,
+            "id": 16
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "_arg_Placeholder_0_0",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267759351,
+            "id": 16
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17,
+            "ts": 1503392267759478,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/BiasAdd",
+                "input0": "ssd_300_vgg/conv1/conv1_1/convolution",
+                "input1": "ssd_300_vgg/conv1/conv1_1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267759497,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_1/Relu",
+                "input0": "ssd_300_vgg/conv1/conv1_1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 64,
+            "ts": 1503392267759511,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/convolution",
+                "input0": "ssd_300_vgg/conv1/conv1_1/Relu",
+                "input1": "ssd_300_vgg/conv1/conv1_2/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267759579,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/BiasAdd",
+                "input0": "ssd_300_vgg/conv1/conv1_2/convolution",
+                "input1": "ssd_300_vgg/conv1/conv1_2/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267759594,
+            "args": {
+                "name": "ssd_300_vgg/conv1/conv1_2/Relu",
+                "input0": "ssd_300_vgg/conv1/conv1_2/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "MaxPool",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21,
+            "ts": 1503392267759609,
+            "args": {
+                "name": "ssd_300_vgg/pool1/MaxPool",
+                "input0": "ssd_300_vgg/conv1/conv1_2/Relu",
+                "op": "MaxPool"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 54,
+            "ts": 1503392267759633,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/convolution",
+                "input0": "ssd_300_vgg/pool1/MaxPool",
+                "input1": "ssd_300_vgg/conv2/conv2_1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267759691,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/BiasAdd",
+                "input0": "ssd_300_vgg/conv2/conv2_1/convolution",
+                "input1": "ssd_300_vgg/conv2/conv2_1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267759705,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_1/Relu",
+                "input0": "ssd_300_vgg/conv2/conv2_1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51,
+            "ts": 1503392267759716,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/convolution",
+                "input0": "ssd_300_vgg/conv2/conv2_1/Relu",
+                "input1": "ssd_300_vgg/conv2/conv2_2/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267759771,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/BiasAdd",
+                "input0": "ssd_300_vgg/conv2/conv2_2/convolution",
+                "input1": "ssd_300_vgg/conv2/conv2_2/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267759785,
+            "args": {
+                "name": "ssd_300_vgg/conv2/conv2_2/Relu",
+                "input0": "ssd_300_vgg/conv2/conv2_2/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "MaxPool",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17,
+            "ts": 1503392267759798,
+            "args": {
+                "name": "ssd_300_vgg/pool2/MaxPool",
+                "input0": "ssd_300_vgg/conv2/conv2_2/Relu",
+                "op": "MaxPool"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 48,
+            "ts": 1503392267759817,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/convolution",
+                "input0": "ssd_300_vgg/pool2/MaxPool",
+                "input1": "ssd_300_vgg/conv3/conv3_1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267759869,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/BiasAdd",
+                "input0": "ssd_300_vgg/conv3/conv3_1/convolution",
+                "input1": "ssd_300_vgg/conv3/conv3_1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267759887,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_1/Relu",
+                "input0": "ssd_300_vgg/conv3/conv3_1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 49,
+            "ts": 1503392267759899,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/convolution",
+                "input0": "ssd_300_vgg/conv3/conv3_1/Relu",
+                "input1": "ssd_300_vgg/conv3/conv3_2/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267759952,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/BiasAdd",
+                "input0": "ssd_300_vgg/conv3/conv3_2/convolution",
+                "input1": "ssd_300_vgg/conv3/conv3_2/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267759966,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_2/Relu",
+                "input0": "ssd_300_vgg/conv3/conv3_2/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 49,
+            "ts": 1503392267759978,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/convolution",
+                "input0": "ssd_300_vgg/conv3/conv3_2/Relu",
+                "input1": "ssd_300_vgg/conv3/conv3_3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267760030,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/BiasAdd",
+                "input0": "ssd_300_vgg/conv3/conv3_3/convolution",
+                "input1": "ssd_300_vgg/conv3/conv3_3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9,
+            "ts": 1503392267760044,
+            "args": {
+                "name": "ssd_300_vgg/conv3/conv3_3/Relu",
+                "input0": "ssd_300_vgg/conv3/conv3_3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "MaxPool",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20,
+            "ts": 1503392267760055,
+            "args": {
+                "name": "ssd_300_vgg/pool3/MaxPool",
+                "input0": "ssd_300_vgg/conv3/conv3_3/Relu",
+                "op": "MaxPool"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 47,
+            "ts": 1503392267760078,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/convolution",
+                "input0": "ssd_300_vgg/pool3/MaxPool",
+                "input1": "ssd_300_vgg/conv4/conv4_1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 26,
+            "ts": 1503392267760129,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/BiasAdd",
+                "input0": "ssd_300_vgg/conv4/conv4_1/convolution",
+                "input1": "ssd_300_vgg/conv4/conv4_1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267760190,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_1/Relu",
+                "input0": "ssd_300_vgg/conv4/conv4_1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51,
+            "ts": 1503392267760205,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/convolution",
+                "input0": "ssd_300_vgg/conv4/conv4_1/Relu",
+                "input1": "ssd_300_vgg/conv4/conv4_2/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267760263,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/BiasAdd",
+                "input0": "ssd_300_vgg/conv4/conv4_2/convolution",
+                "input1": "ssd_300_vgg/conv4/conv4_2/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267760277,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_2/Relu",
+                "input0": "ssd_300_vgg/conv4/conv4_2/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51,
+            "ts": 1503392267760289,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/convolution",
+                "input0": "ssd_300_vgg/conv4/conv4_2/Relu",
+                "input1": "ssd_300_vgg/conv4/conv4_3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267760345,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/BiasAdd",
+                "input0": "ssd_300_vgg/conv4/conv4_3/convolution",
+                "input1": "ssd_300_vgg/conv4/conv4_3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267760358,
+            "args": {
+                "name": "ssd_300_vgg/conv4/conv4_3/Relu",
+                "input0": "ssd_300_vgg/conv4/conv4_3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "MaxPool",
+            "tid": 0,
+            "ph": "X",
+            "dur": 18,
+            "ts": 1503392267760369,
+            "args": {
+                "name": "ssd_300_vgg/pool4/MaxPool",
+                "input0": "ssd_300_vgg/conv4/conv4_3/Relu",
+                "op": "MaxPool"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Square",
+            "tid": 0,
+            "ph": "X",
+            "dur": 21,
+            "ts": 1503392267760390,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Square",
+                "input0": "ssd_300_vgg/conv4/conv4_3/Relu",
+                "op": "Square"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 74,
+            "ts": 1503392267760415,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/convolution",
+                "input0": "ssd_300_vgg/pool4/MaxPool",
+                "input1": "ssd_300_vgg/conv5/conv5_1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Sum",
+            "tid": 0,
+            "ph": "X",
+            "dur": 41,
+            "ts": 1503392267760494,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Sum",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Square",
+                "input1": "ssd_300_vgg/block4_box/L2Normalization/range",
+                "op": "Sum"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 22,
+            "ts": 1503392267760538,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/BiasAdd",
+                "input0": "ssd_300_vgg/conv5/conv5_1/convolution",
+                "input1": "ssd_300_vgg/conv5/conv5_1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Maximum",
+            "tid": 0,
+            "ph": "X",
+            "dur": 19,
+            "ts": 1503392267760571,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Maximum",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Sum",
+                "input1": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Maximum/y",
+                "op": "Maximum"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267760591,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_1/Relu",
+                "input0": "ssd_300_vgg/conv5/conv5_1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Rsqrt",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15,
+            "ts": 1503392267760603,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Rsqrt",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Maximum",
+                "op": "Rsqrt"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51,
+            "ts": 1503392267760619,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/convolution",
+                "input0": "ssd_300_vgg/conv5/conv5_1/Relu",
+                "input1": "ssd_300_vgg/conv5/conv5_2/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Mul",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20,
+            "ts": 1503392267760674,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize",
+                "input0": "ssd_300_vgg/conv4/conv4_3/Relu",
+                "input1": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize/Rsqrt",
+                "op": "Mul"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267760696,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/BiasAdd",
+                "input0": "ssd_300_vgg/conv5/conv5_2/convolution",
+                "input1": "ssd_300_vgg/conv5/conv5_2/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Mul",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267760708,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/L2Normalization/Mul",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/l2_normalize",
+                "input1": "ssd_300_vgg/block4_box/L2Normalization/gamma/read",
+                "op": "Mul"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267760723,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_2/Relu",
+                "input0": "ssd_300_vgg/conv5/conv5_2/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 45,
+            "ts": 1503392267760736,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/Mul",
+                "input1": "ssd_300_vgg/block4_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51,
+            "ts": 1503392267760785,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/block4_box/L2Normalization/Mul",
+                "input1": "ssd_300_vgg/block4_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 47,
+            "ts": 1503392267760839,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/convolution",
+                "input0": "ssd_300_vgg/conv5/conv5_2/Relu",
+                "input1": "ssd_300_vgg/conv5/conv5_3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267760891,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block4_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block4_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267760906,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block4_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block4_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267760917,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/BiasAdd",
+                "input0": "ssd_300_vgg/conv5/conv5_3/convolution",
+                "input1": "ssd_300_vgg/conv5/conv5_3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267760930,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/Shape",
+                "input0": "ssd_300_vgg/block4_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267760936,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/Shape_1",
+                "input0": "ssd_300_vgg/block4_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267760940,
+            "args": {
+                "name": "ssd_300_vgg/conv5/conv5_3/Relu",
+                "input0": "ssd_300_vgg/conv5/conv5_3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9,
+            "ts": 1503392267760955,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/unstack",
+                "input0": "ssd_300_vgg/block4_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267760965,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/unstack_1",
+                "input0": "ssd_300_vgg/block4_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "MaxPool",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267760973,
+            "args": {
+                "name": "ssd_300_vgg/pool5/MaxPool",
+                "input0": "ssd_300_vgg/conv5/conv5_3/Relu",
+                "op": "MaxPool"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8,
+            "ts": 1503392267760992,
+            "args": {
+                "input3": "ssd_300_vgg/block4_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block4_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block4_box/unstack",
+                "input1": "ssd_300_vgg/block4_box/unstack:1",
+                "input4": "ssd_300_vgg/block4_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block4_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267761002,
+            "args": {
+                "input3": "ssd_300_vgg/block4_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block4_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block4_box/unstack_1",
+                "input1": "ssd_300_vgg/block4_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block4_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block4_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761011,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/Shape_1",
+                "input0": "ssd_300_vgg/pool5/MaxPool",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761015,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/Reshape",
+                "input0": "ssd_300_vgg/block4_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block4_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267761020,
+            "args": {
+                "name": "ssd_300_vgg/block4_box/Reshape_1",
+                "input0": "ssd_300_vgg/block4_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block4_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267761025,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/strided_slice/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice",
+                "input0": "ssd_300_vgg/conv6/convolution/Shape_1",
+                "input1": "ssd_300_vgg/conv6/convolution/strided_slice/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/strided_slice/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761033,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/strided_slice_1/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice_1",
+                "input0": "ssd_300_vgg/conv6/convolution/Shape_1",
+                "input1": "ssd_300_vgg/conv6/convolution/strided_slice_1/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/strided_slice_1/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761087,
+            "args": {
+                "name": "ssd_300_vgg/softmax/Shape",
+                "input0": "ssd_300_vgg/block4_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761092,
+            "args": {
+                "name": "ssd_300_vgg/softmax/Reshape",
+                "input0": "ssd_300_vgg/block4_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267761096,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/stack_1",
+                "input0": "ssd_300_vgg/conv6/convolution/strided_slice",
+                "input1": "ssd_300_vgg/conv6/convolution/strided_slice_1",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 66,
+            "ts": 1503392267761102,
+            "args": {
+                "name": "ssd_300_vgg/softmax/Softmax",
+                "input0": "ssd_300_vgg/softmax/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Add",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267761170,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add",
+                "input0": "ssd_300_vgg/conv6/convolution/stack_1",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice",
+                "op": "Add"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267761179,
+            "args": {
+                "name": "ssd_300_vgg/softmax/Reshape_1",
+                "input0": "ssd_300_vgg/softmax/Softmax",
+                "input1": "ssd_300_vgg/softmax/Shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Add",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761183,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add_1",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_1",
+                "op": "Add"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "FloorMod",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267761220,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add_1",
+                "input1": "ssd_300_vgg/conv6/convolution/dilation_rate",
+                "op": "FloorMod"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Sub",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761227,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/sub",
+                "input0": "ssd_300_vgg/conv6/convolution/dilation_rate",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod",
+                "op": "Sub"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "FloorMod",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761231,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod_1",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/sub",
+                "input1": "ssd_300_vgg/conv6/convolution/dilation_rate",
+                "op": "FloorMod"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Add",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267761235,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add_2",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_1",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod_1",
+                "op": "Add"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761243,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_6/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_6",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod_1",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_6/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_6/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761249,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_7/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_7",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/mod_1",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_7/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_7/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761255,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add_2",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761259,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_5/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_5",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/add_2",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_5/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_5/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267761264,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0/0",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_6",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0/0",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267758878,
+            "id": 17
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0/0",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267761264,
+            "id": 17
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761271,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/1",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/1/0",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_7",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761276,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings/0",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_2",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_3",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761281,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings/1",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_4",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/strided_slice_5",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761287,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/0",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops/1",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761292,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings/0",
+                "input1": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings/1",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761296,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/strided_slice_3/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice_3",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/crops",
+                "input1": "ssd_300_vgg/conv6/convolution/strided_slice_3/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/strided_slice_3/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "StridedSlice",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761302,
+            "args": {
+                "input3": "ssd_300_vgg/conv6/convolution/strided_slice_2/stack_2",
+                "name": "ssd_300_vgg/conv6/convolution/strided_slice_2",
+                "input0": "ssd_300_vgg/conv6/convolution/required_space_to_batch_paddings/paddings",
+                "input1": "ssd_300_vgg/conv6/convolution/strided_slice_2/stack",
+                "input2": "ssd_300_vgg/conv6/convolution/strided_slice_2/stack_1",
+                "op": "StridedSlice"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267761307,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/concat_1",
+                "input0": "ssd_300_vgg/conv6/convolution/strided_slice_3",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267761310,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/concat",
+                "input0": "ssd_300_vgg/conv6/convolution/strided_slice_2",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "SpaceToBatchND",
+            "tid": 0,
+            "ph": "X",
+            "dur": 24,
+            "ts": 1503392267761313,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/SpaceToBatchND",
+                "input0": "ssd_300_vgg/pool5/MaxPool",
+                "input1": "ssd_300_vgg/conv6/convolution/SpaceToBatchND/block_shape",
+                "input2": "ssd_300_vgg/conv6/convolution/concat",
+                "op": "SpaceToBatchND"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 67,
+            "ts": 1503392267761341,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution",
+                "input0": "ssd_300_vgg/conv6/convolution/SpaceToBatchND",
+                "input1": "ssd_300_vgg/conv6/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BatchToSpaceND",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267761413,
+            "args": {
+                "name": "ssd_300_vgg/conv6/convolution/BatchToSpaceND",
+                "input0": "ssd_300_vgg/conv6/convolution",
+                "input1": "ssd_300_vgg/conv6/convolution/BatchToSpaceND/block_shape",
+                "input2": "ssd_300_vgg/conv6/convolution/concat_1",
+                "op": "BatchToSpaceND"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267761432,
+            "args": {
+                "name": "ssd_300_vgg/conv6/BiasAdd",
+                "input0": "ssd_300_vgg/conv6/convolution/BatchToSpaceND",
+                "input1": "ssd_300_vgg/conv6/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267761446,
+            "args": {
+                "name": "ssd_300_vgg/conv6/Relu",
+                "input0": "ssd_300_vgg/conv6/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267761458,
+            "args": {
+                "name": "ssd_300_vgg/dropout/Identity",
+                "input0": "ssd_300_vgg/conv6/Relu",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 46,
+            "ts": 1503392267761461,
+            "args": {
+                "name": "ssd_300_vgg/conv7/convolution",
+                "input0": "ssd_300_vgg/dropout/Identity",
+                "input1": "ssd_300_vgg/conv7/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267761511,
+            "args": {
+                "name": "ssd_300_vgg/conv7/BiasAdd",
+                "input0": "ssd_300_vgg/conv7/convolution",
+                "input1": "ssd_300_vgg/conv7/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267761525,
+            "args": {
+                "name": "ssd_300_vgg/conv7/Relu",
+                "input0": "ssd_300_vgg/conv7/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Identity",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267761538,
+            "args": {
+                "name": "ssd_300_vgg/dropout_2/Identity",
+                "input0": "ssd_300_vgg/conv7/Relu",
+                "op": "Identity"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 76,
+            "ts": 1503392267761544,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/conv7/Relu",
+                "input1": "ssd_300_vgg/block7_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 115,
+            "ts": 1503392267761624,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/conv7/Relu",
+                "input1": "ssd_300_vgg/block7_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 27,
+            "ts": 1503392267761744,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/convolution",
+                "input0": "ssd_300_vgg/dropout_2/Identity",
+                "input1": "ssd_300_vgg/block8/conv1x1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15,
+            "ts": 1503392267761776,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block7_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block7_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267761793,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block7_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block7_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267761805,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/BiasAdd",
+                "input0": "ssd_300_vgg/block8/conv1x1/convolution",
+                "input1": "ssd_300_vgg/block8/conv1x1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761816,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/Shape",
+                "input0": "ssd_300_vgg/block7_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761823,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/Shape_1",
+                "input0": "ssd_300_vgg/block7_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267761827,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv1x1/Relu",
+                "input0": "ssd_300_vgg/block8/conv1x1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8,
+            "ts": 1503392267761839,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/unstack",
+                "input0": "ssd_300_vgg/block7_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267761848,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/unstack_1",
+                "input0": "ssd_300_vgg/block7_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pad",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267761854,
+            "args": {
+                "name": "ssd_300_vgg/block8/pad2d/Pad",
+                "input0": "ssd_300_vgg/block8/conv1x1/Relu",
+                "input1": "ssd_300_vgg/block8/pad2d/Pad/paddings",
+                "op": "Pad"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267761875,
+            "args": {
+                "input3": "ssd_300_vgg/block7_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block7_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block7_box/unstack",
+                "input1": "ssd_300_vgg/block7_box/unstack:1",
+                "input4": "ssd_300_vgg/block7_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block7_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761884,
+            "args": {
+                "input3": "ssd_300_vgg/block7_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block7_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block7_box/unstack_1",
+                "input1": "ssd_300_vgg/block7_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block7_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block7_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 75,
+            "ts": 1503392267761890,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/convolution",
+                "input0": "ssd_300_vgg/block8/pad2d/Pad",
+                "input1": "ssd_300_vgg/block8/conv3x3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267761969,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/Reshape",
+                "input0": "ssd_300_vgg/block7_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block7_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267761974,
+            "args": {
+                "name": "ssd_300_vgg/block7_box/Reshape_1",
+                "input0": "ssd_300_vgg/block7_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block7_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15,
+            "ts": 1503392267761978,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/BiasAdd",
+                "input0": "ssd_300_vgg/block8/conv3x3/convolution",
+                "input1": "ssd_300_vgg/block8/conv3x3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762022,
+            "args": {
+                "name": "ssd_300_vgg/softmax_1/Shape",
+                "input0": "ssd_300_vgg/block7_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267762028,
+            "args": {
+                "name": "ssd_300_vgg/softmax_1/Reshape",
+                "input0": "ssd_300_vgg/block7_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax_1/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267762034,
+            "args": {
+                "name": "ssd_300_vgg/block8/conv3x3/Relu",
+                "input0": "ssd_300_vgg/block8/conv3x3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 49,
+            "ts": 1503392267762049,
+            "args": {
+                "name": "ssd_300_vgg/softmax_1/Softmax",
+                "input0": "ssd_300_vgg/softmax_1/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 68,
+            "ts": 1503392267762102,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/block8/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block8_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 71,
+            "ts": 1503392267762174,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/block8/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block8_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20,
+            "ts": 1503392267762250,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/convolution",
+                "input0": "ssd_300_vgg/block8/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block9/conv1x1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267762272,
+            "args": {
+                "name": "ssd_300_vgg/softmax_1/Reshape_1",
+                "input0": "ssd_300_vgg/softmax_1/Softmax",
+                "input1": "ssd_300_vgg/softmax_1/Shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267762280,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block8_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block8_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267762295,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block8_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block8_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267762309,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/BiasAdd",
+                "input0": "ssd_300_vgg/block9/conv1x1/convolution",
+                "input1": "ssd_300_vgg/block9/conv1x1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762349,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/Shape",
+                "input0": "ssd_300_vgg/block8_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267762355,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/Shape_1",
+                "input0": "ssd_300_vgg/block8_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16,
+            "ts": 1503392267762358,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv1x1/Relu",
+                "input0": "ssd_300_vgg/block9/conv1x1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267762376,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/unstack",
+                "input0": "ssd_300_vgg/block8_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762383,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/unstack_1",
+                "input0": "ssd_300_vgg/block8_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pad",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15,
+            "ts": 1503392267762390,
+            "args": {
+                "name": "ssd_300_vgg/block9/pad2d/Pad",
+                "input0": "ssd_300_vgg/block9/conv1x1/Relu",
+                "input1": "ssd_300_vgg/block9/pad2d/Pad/paddings",
+                "op": "Pad"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267762406,
+            "args": {
+                "input3": "ssd_300_vgg/block8_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block8_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block8_box/unstack",
+                "input1": "ssd_300_vgg/block8_box/unstack:1",
+                "input4": "ssd_300_vgg/block8_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block8_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267762414,
+            "args": {
+                "input3": "ssd_300_vgg/block8_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block8_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block8_box/unstack_1",
+                "input1": "ssd_300_vgg/block8_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block8_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block8_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 73,
+            "ts": 1503392267762422,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/convolution",
+                "input0": "ssd_300_vgg/block9/pad2d/Pad",
+                "input1": "ssd_300_vgg/block9/conv3x3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762499,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/Reshape",
+                "input0": "ssd_300_vgg/block8_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block8_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267762505,
+            "args": {
+                "name": "ssd_300_vgg/block8_box/Reshape_1",
+                "input0": "ssd_300_vgg/block8_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block8_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267762509,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/BiasAdd",
+                "input0": "ssd_300_vgg/block9/conv3x3/convolution",
+                "input1": "ssd_300_vgg/block9/conv3x3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267762552,
+            "args": {
+                "name": "ssd_300_vgg/softmax_2/Shape",
+                "input0": "ssd_300_vgg/block8_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267762558,
+            "args": {
+                "name": "ssd_300_vgg/softmax_2/Reshape",
+                "input0": "ssd_300_vgg/block8_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax_2/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267762562,
+            "args": {
+                "name": "ssd_300_vgg/block9/conv3x3/Relu",
+                "input0": "ssd_300_vgg/block9/conv3x3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 47,
+            "ts": 1503392267762576,
+            "args": {
+                "name": "ssd_300_vgg/softmax_2/Softmax",
+                "input0": "ssd_300_vgg/softmax_2/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 55,
+            "ts": 1503392267762625,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/block9/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block9_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 52,
+            "ts": 1503392267762687,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/block9/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block9_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 18,
+            "ts": 1503392267762742,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/convolution",
+                "input0": "ssd_300_vgg/block9/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block10/conv1x1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267762762,
+            "args": {
+                "name": "ssd_300_vgg/softmax_2/Reshape_1",
+                "input0": "ssd_300_vgg/softmax_2/Softmax",
+                "input1": "ssd_300_vgg/softmax_2/Shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12,
+            "ts": 1503392267762769,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block9_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block9_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9,
+            "ts": 1503392267762783,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block9_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block9_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267762797,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/BiasAdd",
+                "input0": "ssd_300_vgg/block10/conv1x1/convolution",
+                "input1": "ssd_300_vgg/block10/conv1x1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762834,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/Shape",
+                "input0": "ssd_300_vgg/block9_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267762839,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/Shape_1",
+                "input0": "ssd_300_vgg/block9_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267762845,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv1x1/Relu",
+                "input0": "ssd_300_vgg/block10/conv1x1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267762860,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/unstack",
+                "input0": "ssd_300_vgg/block9_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267762868,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/unstack_1",
+                "input0": "ssd_300_vgg/block9_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 59,
+            "ts": 1503392267762876,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/convolution",
+                "input0": "ssd_300_vgg/block10/conv1x1/Relu",
+                "input1": "ssd_300_vgg/block10/conv3x3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267762939,
+            "args": {
+                "input3": "ssd_300_vgg/block9_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block9_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block9_box/unstack",
+                "input1": "ssd_300_vgg/block9_box/unstack:1",
+                "input4": "ssd_300_vgg/block9_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block9_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267762950,
+            "args": {
+                "input3": "ssd_300_vgg/block9_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block9_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block9_box/unstack_1",
+                "input1": "ssd_300_vgg/block9_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block9_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block9_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267762957,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/BiasAdd",
+                "input0": "ssd_300_vgg/block10/conv3x3/convolution",
+                "input1": "ssd_300_vgg/block10/conv3x3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267762971,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/Reshape",
+                "input0": "ssd_300_vgg/block9_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block9_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267762978,
+            "args": {
+                "name": "ssd_300_vgg/block9_box/Reshape_1",
+                "input0": "ssd_300_vgg/block9_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block9_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267762982,
+            "args": {
+                "name": "ssd_300_vgg/block10/conv3x3/Relu",
+                "input0": "ssd_300_vgg/block10/conv3x3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763022,
+            "args": {
+                "name": "ssd_300_vgg/softmax_3/Shape",
+                "input0": "ssd_300_vgg/block9_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267763028,
+            "args": {
+                "name": "ssd_300_vgg/softmax_3/Reshape",
+                "input0": "ssd_300_vgg/block9_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax_3/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 53,
+            "ts": 1503392267763032,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/block10/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block10_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 52,
+            "ts": 1503392267763091,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/block10/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block10_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 20,
+            "ts": 1503392267763146,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/convolution",
+                "input0": "ssd_300_vgg/block10/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block11/conv1x1/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 44,
+            "ts": 1503392267763168,
+            "args": {
+                "name": "ssd_300_vgg/softmax_3/Softmax",
+                "input0": "ssd_300_vgg/softmax_3/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17,
+            "ts": 1503392267763214,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block10_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block10_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267763233,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block10_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block10_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9,
+            "ts": 1503392267763246,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/BiasAdd",
+                "input0": "ssd_300_vgg/block11/conv1x1/convolution",
+                "input1": "ssd_300_vgg/block11/conv1x1/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763257,
+            "args": {
+                "name": "ssd_300_vgg/softmax_3/Reshape_1",
+                "input0": "ssd_300_vgg/softmax_3/Softmax",
+                "input1": "ssd_300_vgg/softmax_3/Shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267763263,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/Shape",
+                "input0": "ssd_300_vgg/block10_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267763267,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/Shape_1",
+                "input0": "ssd_300_vgg/block10_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267763271,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv1x1/Relu",
+                "input0": "ssd_300_vgg/block11/conv1x1/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267763316,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/unstack",
+                "input0": "ssd_300_vgg/block10_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763324,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/unstack_1",
+                "input0": "ssd_300_vgg/block10_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 59,
+            "ts": 1503392267763333,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/convolution",
+                "input0": "ssd_300_vgg/block11/conv1x1/Relu",
+                "input1": "ssd_300_vgg/block11/conv3x3/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267763396,
+            "args": {
+                "input3": "ssd_300_vgg/block10_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block10_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block10_box/unstack",
+                "input1": "ssd_300_vgg/block10_box/unstack:1",
+                "input4": "ssd_300_vgg/block10_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block10_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14,
+            "ts": 1503392267763407,
+            "args": {
+                "input3": "ssd_300_vgg/block10_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block10_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block10_box/unstack_1",
+                "input1": "ssd_300_vgg/block10_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block10_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block10_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 13,
+            "ts": 1503392267763423,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/BiasAdd",
+                "input0": "ssd_300_vgg/block11/conv3x3/convolution",
+                "input1": "ssd_300_vgg/block11/conv3x3/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267763437,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/Reshape",
+                "input0": "ssd_300_vgg/block10_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block10_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267763442,
+            "args": {
+                "name": "ssd_300_vgg/block10_box/Reshape_1",
+                "input0": "ssd_300_vgg/block10_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block10_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Relu",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11,
+            "ts": 1503392267763447,
+            "args": {
+                "name": "ssd_300_vgg/block11/conv3x3/Relu",
+                "input0": "ssd_300_vgg/block11/conv3x3/BiasAdd",
+                "op": "Relu"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267763485,
+            "args": {
+                "name": "ssd_300_vgg/softmax_4/Shape",
+                "input0": "ssd_300_vgg/block10_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267763491,
+            "args": {
+                "name": "ssd_300_vgg/softmax_4/Reshape",
+                "input0": "ssd_300_vgg/block10_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax_4/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_4/Reshape/shape",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267759091,
+            "id": 18
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/softmax_4/Reshape/shape",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267763491,
+            "id": 18
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 50,
+            "ts": 1503392267763494,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/convolution",
+                "input0": "ssd_300_vgg/block11/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block11_box/conv_loc/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_loc/weights/read",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267759342,
+            "id": 19
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_loc/weights/read",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267763494,
+            "id": 19
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Conv2D",
+            "tid": 0,
+            "ph": "X",
+            "dur": 54,
+            "ts": 1503392267763548,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/convolution",
+                "input0": "ssd_300_vgg/block11/conv3x3/Relu",
+                "input1": "ssd_300_vgg/block11_box/conv_cls/weights/read",
+                "op": "Conv2D"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 54,
+            "ts": 1503392267763606,
+            "args": {
+                "name": "ssd_300_vgg/softmax_4/Softmax",
+                "input0": "ssd_300_vgg/softmax_4/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25,
+            "ts": 1503392267763662,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_loc/BiasAdd",
+                "input0": "ssd_300_vgg/block11_box/conv_loc/convolution",
+                "input1": "ssd_300_vgg/block11_box/conv_loc/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "BiasAdd",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10,
+            "ts": 1503392267763688,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/conv_cls/BiasAdd",
+                "input0": "ssd_300_vgg/block11_box/conv_cls/convolution",
+                "input1": "ssd_300_vgg/block11_box/conv_cls/biases/read",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_cls/biases/read",
+            "tid": 1,
+            "ph": "s",
+            "ts": 1503392267759350,
+            "id": 20
+        },
+        {
+            "pid": 3,
+            "cat": "DataFlow",
+            "name": "ssd_300_vgg/block11_box/conv_cls/biases/read",
+            "tid": 0,
+            "ph": "t",
+            "ts": 1503392267763688,
+            "id": 20
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6,
+            "ts": 1503392267763699,
+            "args": {
+                "name": "ssd_300_vgg/softmax_4/Reshape_1",
+                "input0": "ssd_300_vgg/softmax_4/Softmax",
+                "input1": "ssd_300_vgg/softmax_4/Shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267763706,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/Shape",
+                "input0": "ssd_300_vgg/block11_box/conv_loc/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267763711,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/Shape_1",
+                "input0": "ssd_300_vgg/block11_box/conv_cls/BiasAdd",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7,
+            "ts": 1503392267763738,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/unstack",
+                "input0": "ssd_300_vgg/block11_box/Shape",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Unpack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763746,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/unstack_1",
+                "input0": "ssd_300_vgg/block11_box/Shape_1",
+                "op": "Unpack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763752,
+            "args": {
+                "input3": "ssd_300_vgg/block11_box/Reshape/shape/3",
+                "name": "ssd_300_vgg/block11_box/Reshape/shape",
+                "input0": "ssd_300_vgg/block11_box/unstack",
+                "input1": "ssd_300_vgg/block11_box/unstack:1",
+                "input4": "ssd_300_vgg/block11_box/Reshape/shape/4",
+                "input2": "ssd_300_vgg/block11_box/unstack:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Pack",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5,
+            "ts": 1503392267763761,
+            "args": {
+                "input3": "ssd_300_vgg/block11_box/Reshape_1/shape/3",
+                "name": "ssd_300_vgg/block11_box/Reshape_1/shape",
+                "input0": "ssd_300_vgg/block11_box/unstack_1",
+                "input1": "ssd_300_vgg/block11_box/unstack_1:1",
+                "input4": "ssd_300_vgg/block11_box/Reshape_1/shape/4",
+                "input2": "ssd_300_vgg/block11_box/unstack_1:2",
+                "op": "Pack"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3,
+            "ts": 1503392267763767,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/Reshape",
+                "input0": "ssd_300_vgg/block11_box/conv_loc/BiasAdd",
+                "input1": "ssd_300_vgg/block11_box/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267763771,
+            "args": {
+                "name": "ssd_300_vgg/block11_box/Reshape_1",
+                "input0": "ssd_300_vgg/block11_box/conv_cls/BiasAdd",
+                "input1": "ssd_300_vgg/block11_box/Reshape_1/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Shape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267763798,
+            "args": {
+                "name": "ssd_300_vgg/softmax_5/Shape",
+                "input0": "ssd_300_vgg/block11_box/Reshape_1",
+                "op": "Shape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2,
+            "ts": 1503392267763803,
+            "args": {
+                "name": "ssd_300_vgg/softmax_5/Reshape",
+                "input0": "ssd_300_vgg/block11_box/Reshape_1",
+                "input1": "ssd_300_vgg/softmax_5/Reshape/shape",
+                "op": "Reshape"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Softmax",
+            "tid": 0,
+            "ph": "X",
+            "dur": 57,
+            "ts": 1503392267763807,
+            "args": {
+                "name": "ssd_300_vgg/softmax_5/Softmax",
+                "input0": "ssd_300_vgg/softmax_5/Reshape",
+                "op": "Softmax"
+            }
+        },
+        {
+            "pid": 3,
+            "cat": "Op",
+            "name": "Reshape",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4,
+            "ts": 1503392267763865,
+            "args": {
+                "name": "ssd_300_vgg/softmax_5/Reshape_1",
+                "input0": "ssd_300_vgg/softmax_5/Softmax",
+                "input1": "ssd_300_vgg/softmax_5/Shape",
+                "op": "Reshape"
+            }
+        }
+    ]
+}

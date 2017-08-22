@@ -11,7 +11,8 @@ The `timing`s below are measured by averaging 1000 trials, excluding two extreme
 
 # System
 
-Ubuntu 16.04 with Titan X. Tensorflow 1.2
+System A: Ubuntu 16.04 with Titan X. Tensorflow 1.2
+System B: Ubuntu 16.04 with GeForce GTX 1080. Tensorflow 1.2
 
 # Classification networks 
 
@@ -21,17 +22,21 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 
 | | | |
 | ------------- |-------------| -----|
-| timing | 8 ms | Check `vgg16_8ms.json` |
+| timing (A) | 8 ms | Check `A_cls_vgg16/A_cls_vgg16.json` |
+| timing (B) | 10.4 ms | Check `B_cls_vgg16/B_cls_vgg16.json` |
 | flops | 36.01b flops | [See flops detail](vgg16_flops_detail.md) |
 | parameters | 138.36m params |   [See params detail](vgg16_params_detail.md) |
+
 
 ### InceptionV3
 
 | | | |
 | ------------- |-------------| -----|
-| timing | 10 ms | Check `incep3_10ms.json` |
+| timing (A) | 10 ms | Check `A_cls_incep3/A_cls_incep3.json` |
+| timing (B) | 7.5 ms | Check `B_cls_incep3/B_cls_incep3.json` |
 | flops | 6.92b flops | [See flops detail](incep3_flops_detail.md) |
 | parameters | 25.57m params |   [See params detail](incep3_params_detail.md) |
+
 
 # Object detection networks 
 
@@ -41,23 +46,26 @@ I implemented [Single-Shot Detection](https://arxiv.org/abs/1512.02325) from var
 
 | | | |
 | ------------- |-------------| -----|
-| timing | ms | Check .json |
-| flops |  flops | [See flops detail](.md) |
-| parameters |  params |   [See params detail](.md) |
+| timing (A) | ms | Check `A_ssd_incep3/A_ssd_incep3.json` |
+| timing (B) | 21 ms | Check `B_ssd_vgg16/B_ssd_vgg16.json` |
+| flops | 87.21b flops | [See flops detail](ssd_vgg16_flops_detail.md) |
+| parameters | 24.01m params | [See params detail](ssd_vgg16_params_detail.md) |
 
 ### InceptionV3-based SSD
 
 | | | |
 | ------------- |-------------| -----|
-| timing |  ms | Check .json |
-| flops | flops | [See flops detail](.md) |
-| parameters | params |   [See params detail](.md) |
+| timing (A) |  ms | Check `A_ssd_incep3/A_ssd_incep3.json` |
+| timing (B) | 16.2 ms | Check `B_ssd_incep3/B_ssd_incep3.json` |
+| flops | 17.21b flops | [See flops detail](ssd_incep3_flops_detail.md) |
+| parameters | 45.12m params |   [See params detail](ssd_incep3_params_detail.md) |
 
 ### InceptionV1-based SSD
 
 | | | |
 | ------------- |-------------| -----|
-| timing |  ms | Check .json |
-| flops |  flops | [See flops detail](.md) |
-| parameters |  params |   [See params detail](.md) |
+| timing (A) |  ms | Check `A_ssd_incep3/A_ssd_incep3.json` |
+| timing (B) | 12.0 ms | Check `B_ssd_incep1/B_ssd_incep1.json` |
+| flops | 12.83b flops | [See flops detail](ssd_incep1_flops_detail.md) |
+| parameters | 19.52m params |   [See params detail](ssd_incep1_params_detail.md) |
 
