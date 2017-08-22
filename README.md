@@ -30,8 +30,8 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 | | | |
 | ------------- |-------------| -----|
 | timing | 10 ms | Check `inception3_10ms.json` |
-| flops | 6.92b flops | [See flops detail](incep1_flops_detail.md) |
-| parameters | 25.57m params |   [See params detail](incep1_params_detail.md) |
+| flops | 6.92b flops | [See flops detail](incep3_flops_detail.md) |
+| parameters | 25.57m params |   [See params detail](incep3_params_detail.md) |
 
 # Object detection networks 
 
