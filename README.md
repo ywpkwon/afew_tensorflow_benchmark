@@ -91,8 +91,7 @@ PASCAL VOC classification (input 1x224x224x3. output 21 classes.)
 
 ### INCEPTION-V3. PASCAL VOC classification (input 224x224x3. output 21)
 
-#### timing
-10 ms
+#### timing: 10 ms
 
 #### flops
     _TFProfRoot (0/6.92b flops)
