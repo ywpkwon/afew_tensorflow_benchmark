@@ -6,7 +6,7 @@ I reported `flops` and `parameter sizes` as well as `timing`. Still, I am not su
 
 You will see the results of `VGG16` and `INCEPTION-V3` for ImageNet classification, and `VGG16-based SSD`, `Inception-V3-based SSD`, and `Inception-V1-based SSD` for object detection.
 
-The `timing`s below are measured by averaging 1000 trials, excluding two extremes (min and max). You can also see check timeline profiles which trace each operational duration using `Chrome`. Type `chrome:\\tracing` and load each json file.
+The `timing`s below are measured by averaging 1000 trials, excluding two extremes (min and max). I also provide timeline profiles as `.json` files, which trace each operational duration. To check them, launch `Chrome`, type `chrome:\\tracing`, and load each json file.
 
 
 # System
