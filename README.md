@@ -30,16 +30,43 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 #### timing: 10 ms
 
 #### flops: 6.92b flops
+[See flops detail](incep1_flops_detail.md)
 
 #### parameters: 25.57m params
-
+[See params detail](incep1_params_detail.md)
 
 # Object detection networks 
 
 I implemented Single-Shot Detection from various base networks (input 1x270x480x3). All have similar multi-box configurations (6 multi-box layers).
 
-### VGG16-based Inception
+### VGG16-based SSD
 
-### Inception-V3--based Inception
+#### timing:  ms
 
-### Inception-V1-based Inception
+#### flops:  flops
+[See flops detail]()
+
+#### parameters:  params
+[See params detail]()
+
+### Inception-V3-based SSD
+
+#### timing:  ms
+
+#### flops:  flops
+[See flops detail]()
+
+#### parameters:  params
+[See params detail]()
+
+
+### Inception-V1-based SSD
+
+#### timing:  ms
+
+#### flops:  flops
+[See flops detail]()
+
+#### parameters:  params
+[See params detail]()
+
