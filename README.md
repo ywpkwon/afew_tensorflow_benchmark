@@ -19,7 +19,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 
 | | | |
 | ------------- |-------------| -----|
-| timing | 8 ms | Check vgg16_8ms.json |
+| timing | 8 ms | Check `vgg16_8ms.json` |
 | flops | 36.01b flops | [See flops detail](vgg16_flops_detail.md) |
 | parameters | 138.36m params |   [See params detail](vgg16_params_detail.md) |
 
@@ -27,7 +27,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 
 | | | |
 | ------------- |-------------| -----|
-| timing | 10 ms | Check inception3_10ms.json |
+| timing | 10 ms | Check `inception3_10ms.json` |
 | flops | 6.92b flops | [See flops detail](incep1_flops_detail.md) |
 | parameters | 25.57m params |   [See params detail](incep1_params_detail.md) |
 
@@ -47,7 +47,7 @@ I implemented Single-Shot Detection from various base networks (input 1x270x480x
 
 | | | |
 | ------------- |-------------| -----|
-| timing |  ms | Check inception3_10ms.json |
+| timing |  ms | Check .json |
 | flops | flops | [See flops detail](.md) |
 | parameters | params |   [See params detail](.md) |
 
