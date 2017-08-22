@@ -33,7 +33,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 
 # Object detection networks 
 
-I implemented Single-Shot Detection from various base networks (input 1x270x480x3). All have similar multi-box configurations (6 multi-box layers).
+I implemented [Single-Shot Detection](https://arxiv.org/abs/1512.02325) from various base networks. All versions have similar multi-box configurations (6 multi-box layers).
 
 ### VGG16-based SSD
 
