@@ -18,7 +18,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 ### VGG16
 
 | | | |
-| ------------- |:-------------:| -----:|
+| ------------- |-------------| -----|
 | timg      | 8 ms      |   |
 | flops      | 36.01b flops      | [See flops detail](vgg16_flops_detail.md) |
 | parameters | 138.36m params      |   [See params detail](vgg16_params_detail.md) |
