@@ -4,7 +4,7 @@ I measured computation time for **one** image inference (`batch size = 1`). Larg
 
 I reported `flops` and `parameter sizes` as well as `timing`. Still, I am not sure why some networks run faster even when they have larger FLOPS and PARAMS. (E.g, see `VGG16` and `INCEPTION-V3` for classification.) **Please let me know if you know the answer**.
 
-You will see the `VGG16` and `INCEPTION-V3` for ImageNet classification, and `VGG16-based SSD`, `Inception-V3-based SSD`, and `Inception-V1-based SSD` for object detection.
+You will see the results of `VGG16` and `INCEPTION-V3` for ImageNet classification, and `VGG16-based SSD`, `Inception-V3-based SSD`, and `Inception-V1-based SSD` for object detection.
 
 The computation durations below are measured by averaging 1000 trials, with excluding two extremes (min and max). You can see also timeline profiling which shows each operational duration. The are `.json` files, and you can check them using `Chrome`. Type `chrome:\\tracing` and load each json file.
 
