@@ -11,8 +11,10 @@ The `timing`s below are measured by averaging 1000 trials, excluding two extreme
 
 # System
 
-System A: Ubuntu 16.04 with Titan X. Tensorflow 1.2
-System B: Ubuntu 16.04 with GeForce GTX 1080. Tensorflow 1.2
+| System | OS | GPU | CPU | Tensorflow ver. |
+| ------------- | ------- | ------ | ----- | ---- |
+| A | Ubuntu 16.04 | Titan X | | 1.2 |
+| B | Ubuntu 16.04 | GeForce GTX 1080 8Gb | | 1.2 |
 
 # Classification networks 
 
