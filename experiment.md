@@ -8,7 +8,7 @@ Ubuntu 16.04 with Titan X. Tensorflow 1.2
 
 # Classification networks 
 
-## VGG16. PASCAL VOC classification (input 224x224x3. output 21)
+### VGG16. PASCAL VOC classification (input 224x224x3. output 21)
 
 #### timing: 8 ms
 
