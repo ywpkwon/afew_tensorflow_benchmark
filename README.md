@@ -17,7 +17,7 @@ Imagenet classification (input 1x224x224x3. output 1000 classes.)
 
 ### VGG16
 
-| timing      | right-aligned | $1600 |
+||  | |
 | ------------- |:-------------:| -----:|
 | flops      | centered      |   $12 |
 | parameters | are neat      |    $1 |
